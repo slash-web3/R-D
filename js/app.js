@@ -2884,7 +2884,7 @@
                     autoHeight: true
                 },
                 360: {
-                    slidesPerView: 1,
+                    slidesPerView: 1.23,
                     spaceBetween: 10,
                     autoHeight: true
                 },
