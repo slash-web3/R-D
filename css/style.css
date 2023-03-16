@@ -2333,22 +2333,22 @@ h6 {
 }
 }
 
-@media (max-width: 26.0625em) and (min-width: 20em) {
+@media (max-width: 26.0625em) and (min-width: 19.6875em) {
   .services__items {
     row-gap: 1.875rem;
   }
 }
 
-@media (max-width: 26.0625em) and (min-width: 20em) and (max-width: 20em) {
-@supports (row-gap: clamp( 1.25rem , -Infinityrem  +  Infinityvw , 1.875rem )) {
+@media (max-width: 26.0625em) and (min-width: 20em) and (max-width: 19.6875em) {
+@supports (row-gap: clamp( 1.25rem , 41.25rem  +  -200vw , 1.875rem )) {
     .services__items {
-      row-gap: clamp( 1.25rem , -Infinityrem  +  Infinityvw , 1.875rem );
+      row-gap: clamp( 1.25rem , 41.25rem  +  -200vw , 1.875rem );
     }
 }
 
-@supports not (row-gap: clamp( 1.25rem , -Infinityrem  +  Infinityvw , 1.875rem )) {
+@supports not (row-gap: clamp( 1.25rem , 41.25rem  +  -200vw , 1.875rem )) {
     .services__items {
-      row-gap: calc(1.25rem + 0.625 * (100vw - 20rem) / 0);
+      row-gap: calc(1.25rem + 0.625 * (100vw - 20rem) / -0.3125);
     }
 }
 }
