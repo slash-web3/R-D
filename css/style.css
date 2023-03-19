@@ -960,7 +960,6 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   gap: 0.9375rem;
-  min-height: 3.125rem;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -1584,6 +1583,10 @@ h6 {
   }
 
   .aside__title {
+    min-height: 3.125rem;
+  }
+
+  .aside__title {
     padding-left: 2.0625rem;
   }
 
@@ -1959,6 +1962,10 @@ h6 {
 
   .aside__preview {
     gap: 0.9375rem;
+  }
+
+  .aside__title {
+    min-height: 2.5rem;
   }
 
   .aside__title {
@@ -3022,6 +3029,18 @@ h6 {
 @supports not (gap: clamp( 0.9375rem , 0.3492647059rem  +  2.9411764706vw , 2.5rem )) {
     .aside__preview {
       gap: calc(0.9375rem + 1.5625 * (100vw - 20rem) / 53.125);
+    }
+}
+
+@supports (min-height: clamp( 2.5rem , 2.2647058824rem  +  1.1764705882vw , 3.125rem )) {
+    .aside__title {
+      min-height: clamp( 2.5rem , 2.2647058824rem  +  1.1764705882vw , 3.125rem );
+    }
+}
+
+@supports not (min-height: clamp( 2.5rem , 2.2647058824rem  +  1.1764705882vw , 3.125rem )) {
+    .aside__title {
+      min-height: calc(2.5rem + 0.625 * (100vw - 20rem) / 53.125);
     }
 }
 
