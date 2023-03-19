@@ -948,11 +948,16 @@ h6 {
           flex-direction: column;
   background: #34495E;
   padding-top: 1.25rem;
-  min-height: 53.5625rem;
+  height: 100%;
 }
 
 .aside__navigation ._tab-active {
   background: #243342;
+}
+
+.aside__footer {
+  height: 100%;
+  background: #34495E;
 }
 
 .aside__title {
